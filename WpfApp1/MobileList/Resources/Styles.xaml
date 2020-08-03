@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <Style x:Key="InfoBlock" TargetType="TextBlock">
+            <Setter Property="TextBlock.Background" Value="LightGray"/>
+            <Setter Property="TextBlock.FontFamily" Value="Verdana"/>
+            <Setter Property="TextBlock.FontSize" Value="14px"/>
+        </Style>
+        <Style x:Key="Error_1" TargetType="TextBlock">
+            <Setter Property="TextBlock.Background" Value="LightCoral"/>
+            <Setter Property="TextBlock.FontFamily" Value="Verdana"/>
+            <Setter Property="TextBlock.FontSize" Value="14px"/>
+        </Style>
+        <Style x:Key="Error_2" TargetType="Label">
+            <Setter Property="TextBlock.Background" Value="IndianRed"/>
+            <Setter Property="TextBlock.FontFamily" Value="Verdana"/>
+            <Setter Property="TextBlock.FontSize" Value="14px"/>
+        </Style>
+        <Style x:Key="Success">
+            <Setter Property="TextBlock.Background" Value="PaleGreen"/>
+            <Setter Property="TextBlock.FontFamily" Value="Verdana"/>
+            <Setter Property="TextBlock.FontSize" Value="14px"/>
+        </Style>
+        <Style x:Key="Label" TargetType="Label">
+            <Setter Property="Label.FontFamily" Value="Verdana"/>
+            <Setter Property="Label.FontSize" Value="20px"/>
+        </Style>
+        <Style x:Key="Button" TargetType="Button">
+            <Setter Property="Button.Background" Value="DarkGray"/>
+            <Setter Property="Button.FontFamily" Value="Verdana"/>
+            <Setter Property="Button.FontSize" Value="16px"/>
+            <Setter Property="Margin" Value="3px"></Setter>
+        </Style>
+</ResourceDictionary>
