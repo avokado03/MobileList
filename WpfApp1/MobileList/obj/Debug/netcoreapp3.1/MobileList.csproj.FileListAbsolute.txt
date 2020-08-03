@@ -34,3 +34,5 @@ C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.pdb
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\MainWindow.g.cs
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\MainWindow.baml
+C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\PDFTable.g.cs
+C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\PDFTable.baml
