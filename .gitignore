@@ -1,0 +1,10 @@
+﻿################################################################################
+# Данный GITIGNORE-файл был автоматически создан Microsoft(R) Visual Studio.
+################################################################################
+
+/WpfApp1/WpfApp1/obj/Debug/netcoreapp3.1
+/WpfApp1/WpfApp1/obj
+/WpfApp1/.vs
+/.vs/MobileList/v16
+/.vs
+/WpfApp1/WpfApp1/bin/Debug/netcoreapp3.1
