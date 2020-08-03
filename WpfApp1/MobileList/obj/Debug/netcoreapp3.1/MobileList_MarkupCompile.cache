@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\App.xaml
-31524046063
+3-2029497551
 
-3-917710711
+3-1724115075
 1921654412462
-MainWindow.xaml;Resources\StringResources.xaml;Resources\Styles.xaml;
+Resources\StringResources.xaml;Resources\Styles.xaml;Views\MainWindow.xaml;
 
 False
 

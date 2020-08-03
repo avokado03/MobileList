@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:MobileList.Resources"
                     xmlns:v="clr-namespace:System;assembly=System.Runtime">
+    <v:String x:Key="MainHeader">MobileList</v:String>
     <v:String x:Key="Set1C">Откройте файл-заказ из 1С</v:String>
     <v:String x:Key="1CDesc">Формат файла: .csv с разделителем "точка с запятой".</v:String>
     <v:String x:Key="OpenBtn">Открыть</v:String>

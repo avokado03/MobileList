@@ -15,8 +15,6 @@ C:\Users\О_о\source\repos\MobileList\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\M
 C:\Users\О_о\source\repos\MobileList\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\MobileList.dll
 C:\Users\О_о\source\repos\MobileList\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\MobileList.pdb
 C:\Users\О_о\source\repos\MobileList\WpfApp1\WpfApp1\obj\Debug\netcoreapp3.1\MobileList.csprojAssemblyReference.cache
-C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.csprojAssemblyReference.cache
-C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MainWindow.g.cs
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\App.g.cs
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList_MarkupCompile.cache
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList_MarkupCompile.lref
@@ -27,7 +25,6 @@ C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\bin\Debug\netcoreapp3.
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\bin\Debug\netcoreapp3.1\MobileList.dll
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\bin\Debug\netcoreapp3.1\MobileList.pdb
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\App.baml
-C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MainWindow.baml
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Resources\StringResources.baml
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Resources\Styles.baml
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.g.resources
@@ -35,3 +32,5 @@ C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.AssemblyInfo.cs
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.dll
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.pdb
+C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\MainWindow.g.cs
+C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\MainWindow.baml
