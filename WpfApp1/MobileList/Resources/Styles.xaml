@@ -4,7 +4,15 @@
     <Style x:Key="InfoBlock" TargetType="TextBlock">
         <Setter Property="TextBlock.Background" Value="LightGray"/>
         <Setter Property="TextBlock.FontFamily" Value="Verdana"/>
-        <Setter Property="TextBlock.FontSize" Value="14px"/>
+        <Setter Property="TextBlock.FontSize" Value="16px"/>
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding IsError}" Value="False">
+                <Setter Property="TextBlock.Background" Value="LightGray"/>
+            </DataTrigger>
+            <DataTrigger Binding="{Binding IsError}" Value="True">
+                <Setter Property="TextBlock.Background" Value="LightCoral"/>
+            </DataTrigger>
+        </Style.Triggers>
     </Style>
     <Style x:Key="Error_1" TargetType="TextBlock">
         <Setter Property="TextBlock.Background" Value="LightCoral"/>

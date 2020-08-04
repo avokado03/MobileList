@@ -4,7 +4,7 @@
     <!--MainWindow resources-->
     <v:String x:Key="MainHeader">MobileList</v:String>
     <v:String x:Key="Set1C">Откройте файл-заказ из 1С</v:String>
-    <v:String x:Key="1CDesc">Формат файла: .csv с разделителем "точка с запятой".</v:String>
+    <v:String x:Key="1CDesc">Формат файла: .csv с разделителем "запятая".</v:String>
     <v:String x:Key="OpenBtn">Открыть</v:String>
     <v:String x:Key="CleanBtn">Очистить</v:String>
     <v:String x:Key="RevertBtn">Отменить</v:String>

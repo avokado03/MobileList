@@ -3,9 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:r="clr-namespace:WpfApp1"
+        xmlns:vm="clr-namespace:MobileList.ViewModels"
         mc:Ignorable="d"
         Title="{StaticResource MainHeader}" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:CSVViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Style="{StaticResource DefaultColumnWidth}"/>
@@ -31,14 +34,15 @@
                Grid.ColumnSpan="3" Style="{StaticResource Label}"
                VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3">
-            <TextBlock x:Name="Path" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3"/>
+            <TextBlock x:Name="Path" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Text="{Binding Model.CSVPath}"
+                       FontSize="16px" FontFamily="Verdana" VerticalAlignment="Center"/>
         </Border>
         <Button x:Name="OpenBtn" Style="{StaticResource Button}" Grid.Row="4" Grid.Column="2"
-                Content="{StaticResource OpenBtn}"/>
+                Content="{StaticResource OpenBtn}" Command="{Binding OpenFileCommand}"/>
         <Button x:Name="ClearBtn" Style="{StaticResource Button}" Grid.Row="4" Grid.Column="3"
-                Content="{StaticResource CleanBtn}"/>
+                Content="{StaticResource CleanBtn}" Command="{Binding CleanFilePathCommand}"/>
         <Button x:Name="NextBtn" Style="{StaticResource Button}" Grid.Row="6" Grid.Column="3"
-                Content="{StaticResource NextBtn}"/>
-        <TextBlock Grid.Row="7" Grid.ColumnSpan="5" Style="{StaticResource InfoBlock}"/>
+                Content="{StaticResource NextBtn}" />
+        <TextBlock Grid.Row="7" Grid.ColumnSpan="5" Style="{StaticResource InfoBlock}" Text="{Binding Model.Error}"/>
     </Grid>
 </Window>
