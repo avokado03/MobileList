@@ -36,7 +36,6 @@ C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\MainWindow.baml
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\PDFTable.g.cs
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\PDFTable.baml
-C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.csprojAssemblyReference.cache
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Extras.dll
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Platform.dll
