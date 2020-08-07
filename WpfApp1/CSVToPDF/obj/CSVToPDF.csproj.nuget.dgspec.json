@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\MobileList\\MobileList.csproj": {}
+    "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\CSVToPDF\\CSVToPDF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\MobileList\\MobileList.csproj": {
+    "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\CSVToPDF\\CSVToPDF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\MobileList\\MobileList.csproj",
-        "projectName": "MobileList",
-        "projectPath": "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\MobileList\\MobileList.csproj",
+        "projectUniqueName": "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\CSVToPDF\\CSVToPDF.csproj",
+        "projectName": "CSVToPDF",
+        "projectPath": "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\CSVToPDF\\CSVToPDF.csproj",
         "packagesPath": "C:\\Users\\О_о\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\MobileList\\obj\\",
+        "outputPath": "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\CSVToPDF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -41,12 +41,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "MvvmLightLibs": {
-              "target": "Package",
-              "version": "[5.4.1.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -60,9 +54,6 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WPF": {
-              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.400\\RuntimeIdentifierGraph.json"

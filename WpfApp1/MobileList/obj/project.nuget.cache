@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "R0mylm/A+1BLuyxHBIGYCNvtIGNzve4BCivw7ck4VreXcjGSdmwXEems5jfk6s76yPFdOQCSUitarECAK8m6ww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\MobileList\\MobileList.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\О_о\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"MvvmLightLibs 5.4.1.1\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "MvvmLightLibs",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}

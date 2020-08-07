@@ -3,6 +3,7 @@ using System;
 using System.Windows.Input;
 using System.Windows;
 using Microsoft.Win32;
+using MobileList.Views;
 
 namespace MobileList.ViewModels
 {
@@ -14,6 +15,7 @@ namespace MobileList.ViewModels
             Model = new CSVModel();
             OpenFileCommand = new CommandBase(OpenFile);
             CleanFilePathCommand = new CommandBase(CleanFilePath);
+            base.SetPrevNext(null, new PDFTable());
         }
 
         public CSVModel Model
