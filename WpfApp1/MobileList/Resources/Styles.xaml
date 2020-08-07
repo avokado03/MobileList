@@ -50,6 +50,9 @@
             </DataTrigger>
         </Style.Triggers>
     </Style>
+    <Style x:Key="SmallButton" TargetType="Button" BasedOn="{StaticResource Button}">
+        <Setter Property="Margin" Value="3"/>
+    </Style>
     <!--Grid styles-->
     <Style x:Key="DefaultRowHeight" TargetType="RowDefinition">
         <Setter Property="MinHeight" Value="10px"/>

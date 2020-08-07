@@ -4,6 +4,7 @@ using System.Windows.Input;
 using System.Windows;
 using Microsoft.Win32;
 using MobileList.Views;
+using MobileList.ViewModels.Commands;
 
 namespace MobileList.ViewModels
 {
@@ -51,8 +52,10 @@ namespace MobileList.ViewModels
         {
             try
             {
-                OpenFileDialog fileDialog = new OpenFileDialog();
-                fileDialog.Filter = "CSV Files (*.csv)|*.csv";
+                OpenFileDialog fileDialog = new OpenFileDialog
+                {
+                    Filter = "CSV Files (*.csv)|*.csv"
+                };
                 if (!fileDialog.ShowDialog() == true)
                 {
                     throw new ArgumentException("Проверьте расширение и целостность файла заказа");

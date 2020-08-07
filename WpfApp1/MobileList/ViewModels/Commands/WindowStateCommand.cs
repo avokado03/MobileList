@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Input;
 
-namespace MobileList.ViewModels
+namespace MobileList.ViewModels.Commands
 {
     public class WindowStateCommand: ICommand 
     {

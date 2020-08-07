@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MobileList.ViewModels.Commands;
 using System.Windows;
 using System.Windows.Input;
 

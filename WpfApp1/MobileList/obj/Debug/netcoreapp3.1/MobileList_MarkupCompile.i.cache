@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\App.xaml
-4853537555
+51462082718
 
-13-1127776392
+15-33581001
 196288300965
-Resources\StringResources.xaml;Resources\Styles.xaml;Views\MainWindow.xaml;Views\PDFTable.xaml;
+Resources\StringResources.xaml;Resources\Styles.xaml;Views\MainWindow.xaml;Views\PDFTable.xaml;Views\SetDirectories.xaml;
 
 False
 
