@@ -1,0 +1,9 @@
+C:\Users\О_о\source\repos\MobileList\WpfApp1\CSVToPDF\bin\Debug\netcoreapp3.1\CSVToPDF.deps.json
+C:\Users\О_о\source\repos\MobileList\WpfApp1\CSVToPDF\bin\Debug\netcoreapp3.1\CSVToPDF.dll
+C:\Users\О_о\source\repos\MobileList\WpfApp1\CSVToPDF\bin\Debug\netcoreapp3.1\CSVToPDF.pdb
+C:\Users\О_о\source\repos\MobileList\WpfApp1\CSVToPDF\obj\Debug\netcoreapp3.1\CSVToPDF.csprojAssemblyReference.cache
+C:\Users\О_о\source\repos\MobileList\WpfApp1\CSVToPDF\obj\Debug\netcoreapp3.1\CSVToPDF.AssemblyInfoInputs.cache
+C:\Users\О_о\source\repos\MobileList\WpfApp1\CSVToPDF\obj\Debug\netcoreapp3.1\CSVToPDF.AssemblyInfo.cs
+C:\Users\О_о\source\repos\MobileList\WpfApp1\CSVToPDF\obj\Debug\netcoreapp3.1\CSVToPDF.csproj.CoreCompileInputs.cache
+C:\Users\О_о\source\repos\MobileList\WpfApp1\CSVToPDF\obj\Debug\netcoreapp3.1\CSVToPDF.dll
+C:\Users\О_о\source\repos\MobileList\WpfApp1\CSVToPDF\obj\Debug\netcoreapp3.1\CSVToPDF.pdb
