@@ -46,3 +46,4 @@ C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\SetDirectories.baml
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.csproj.CoreCompileInputs.cache
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.genruntimeconfig.cache
+C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.csprojAssemblyReference.cache

@@ -1,12 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "R0mylm/A+1BLuyxHBIGYCNvtIGNzve4BCivw7ck4VreXcjGSdmwXEems5jfk6s76yPFdOQCSUitarECAK8m6ww==",
+  "dgSpecHash": "/n1mNFaemFu8DldNRnfsCr1doudxq9QRMA9L/I2zDEAlA9KCyH2XgIT3XzQElo5IdpUYCB6zSiLMsjVtzMdB7A==",
   "success": true,
   "projectFilePath": "C:\\Users\\О_о\\source\\repos\\MobileList\\WpfApp1\\MobileList\\MobileList.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\О_о\\.nuget\\packages\\microsoft.windowsapicodepack-shell\\1.1.0\\microsoft.windowsapicodepack-shell.1.1.0.nupkg.sha512",
     "C:\\Users\\О_о\\.nuget\\packages\\mvvmlightlibs\\5.4.1.1\\mvvmlightlibs.5.4.1.1.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"Microsoft.WindowsAPICodePack-Shell 1.1.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "Microsoft.WindowsAPICodePack-Shell",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
