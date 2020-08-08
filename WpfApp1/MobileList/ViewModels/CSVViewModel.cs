@@ -16,6 +16,7 @@ namespace MobileList.ViewModels
             Model = new CSVModel();
             OpenFileCommand = new CommandBase(OpenFile);
             CleanFilePathCommand = new CommandBase(CleanFilePath);
+            SetDirectoriesCommand = new WindowStateCommand(new SetDirectories());
             base.SetPrevNext(null, new PDFTable());
         }
 
@@ -44,6 +45,19 @@ namespace MobileList.ViewModels
 
         public static readonly DependencyProperty CleanFilePathCommandProperty =
             DependencyProperty.Register("CleanFilePathCommand", typeof(ICommand), typeof(CSVViewModel), new PropertyMetadata(null));
+
+
+
+        public ICommand SetDirectoriesCommand
+        {
+            get { return (ICommand)GetValue(SetDirectoriesCommandProperty); }
+            set { SetValue(SetDirectoriesCommandProperty, value); }
+        }
+
+        public static readonly DependencyProperty SetDirectoriesCommandProperty =
+            DependencyProperty.Register("SetDirectoriesCommand", typeof(ICommand), typeof(CSVViewModel), new PropertyMetadata(null));
+
+
 
         #endregion
 

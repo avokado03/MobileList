@@ -21,8 +21,8 @@ namespace MobileList.Models.Extentions
             try
             {
                 Environment.SetEnvironmentVariable("ResultPath", model.ResultDir);
-                Environment.SetEnvironmentVariable("PDFDir", model.PDFDir);
-                Environment.SetEnvironmentVariable("HTMLDir", model.HTMLDir);
+                Environment.SetEnvironmentVariable("PDFPath", model.PDFDir);
+                Environment.SetEnvironmentVariable("HTMLPath", model.HTMLDir);
                 return true;
             }
             catch 
