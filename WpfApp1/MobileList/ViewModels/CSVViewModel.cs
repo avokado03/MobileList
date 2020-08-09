@@ -72,7 +72,7 @@ namespace MobileList.ViewModels
                 };
                 if (!fileDialog.ShowDialog() == true)
                 {
-                    throw new ArgumentException("Проверьте расширение и целостность файла заказа");
+                    throw new ArgumentException();
                 }
                 Model.CSVPath = fileDialog.FileName;
                 Error = string.Empty;
@@ -81,7 +81,7 @@ namespace MobileList.ViewModels
             catch (Exception)
             {
                 Model.CSVPath = string.Empty;
-                Error = "Файл не выбран";
+                Error = ;
                 Next = false;
             }
         }
