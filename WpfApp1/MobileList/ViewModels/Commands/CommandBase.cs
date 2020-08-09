@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 
-namespace MobileList.ViewModels
+namespace MobileList.ViewModels.Commands
 {
     public class CommandBase : ICommand
     {

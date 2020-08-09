@@ -41,8 +41,12 @@
                 Content="{StaticResource OpenBtn}" Command="{Binding OpenFileCommand}"/>
         <Button x:Name="ClearBtn" Style="{StaticResource Button}" Grid.Row="4" Grid.Column="3"
                 Content="{StaticResource CleanBtn}" Command="{Binding CleanFilePathCommand}"/>
-        <Button x:Name="NextBtn" Style="{StaticResource Button}" Grid.Row="6" Grid.Column="3"
-                Content="{StaticResource NextBtn}" />
-        <TextBlock Grid.Row="7" Grid.ColumnSpan="5" Style="{StaticResource InfoBlock}" Text="{Binding Model.Error}"/>
+        <Button x:Name="SetDirectBtn" Style="{StaticResource Button}" Grid.Row="6" Grid.Column="1"
+                Content="{StaticResource SetDirectBtn}" Command="{Binding SetDirectoriesCommand}"
+                CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
+        <Button x:Name="NextBtn" Style="{StaticResource NextButton}" Grid.Row="6" Grid.Column="3"
+                Content="{StaticResource NextBtn}" Command="{Binding GoToNextWindowCommand}" 
+                CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"/>
+        <TextBlock Grid.Row="7" Grid.ColumnSpan="5" Style="{StaticResource InfoBlock}" Text="{Binding Error}"/>
     </Grid>
 </Window>

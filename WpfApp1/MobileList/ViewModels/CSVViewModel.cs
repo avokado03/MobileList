@@ -1,23 +1,23 @@
 ﻿using MobileList.Models;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Input;
 using System.Windows;
 using Microsoft.Win32;
-using GalaSoft.MvvmLight.Command;
+using MobileList.Views;
+using MobileList.ViewModels.Commands;
 
 namespace MobileList.ViewModels
 {
-    public class CSVViewModel : DependencyObject
+    public class CSVViewModel : VMBase
     {
 
         public CSVViewModel()
         {
             Model = new CSVModel();
-            IsError = false;
             OpenFileCommand = new CommandBase(OpenFile);
             CleanFilePathCommand = new CommandBase(CleanFilePath);
+            SetDirectoriesCommand = new WindowStateCommand(new SetDirectories());
+            base.SetPrevNext(null, new PDFTable());
         }
 
         public CSVModel Model
@@ -27,19 +27,6 @@ namespace MobileList.ViewModels
         }
         public static readonly DependencyProperty ModelProperty =
             DependencyProperty.Register("Model", typeof(CSVModel), typeof(CSVViewModel), new PropertyMetadata(null));
-
-
-
-        public bool IsError
-        {
-            get { return (bool)GetValue(IsErrorProperty); }
-            set { SetValue(IsErrorProperty, value); }
-        }
-
-        public static readonly DependencyProperty IsErrorProperty =
-            DependencyProperty.Register("IsError", typeof(bool), typeof(CSVViewModel), new PropertyMetadata(false));
-
-
 
         #region Command props
         public ICommand OpenFileCommand
@@ -59,6 +46,19 @@ namespace MobileList.ViewModels
         public static readonly DependencyProperty CleanFilePathCommandProperty =
             DependencyProperty.Register("CleanFilePathCommand", typeof(ICommand), typeof(CSVViewModel), new PropertyMetadata(null));
 
+
+
+        public ICommand SetDirectoriesCommand
+        {
+            get { return (ICommand)GetValue(SetDirectoriesCommandProperty); }
+            set { SetValue(SetDirectoriesCommandProperty, value); }
+        }
+
+        public static readonly DependencyProperty SetDirectoriesCommandProperty =
+            DependencyProperty.Register("SetDirectoriesCommand", typeof(ICommand), typeof(CSVViewModel), new PropertyMetadata(null));
+
+
+
         #endregion
 
         #region Command actions
@@ -66,28 +66,31 @@ namespace MobileList.ViewModels
         {
             try
             {
-                OpenFileDialog fileDialog = new OpenFileDialog();
-                fileDialog.Filter = "CSV Files (*.csv)|*.csv";
+                OpenFileDialog fileDialog = new OpenFileDialog
+                {
+                    Filter = "CSV Files (*.csv)|*.csv"
+                };
                 if (!fileDialog.ShowDialog() == true)
                 {
                     throw new ArgumentException("Проверьте расширение и целостность файла заказа");
                 }
                 Model.CSVPath = fileDialog.FileName;
-                IsError = false;
+                Error = string.Empty;
+                Next = true;
             }
             catch (Exception)
             {
                 Model.CSVPath = string.Empty;
-                Model.Error = "Файл не выбран";
-                IsError = true;
+                Error = "Файл не выбран";
+                Next = false;
             }
         }
 
         private void CleanFilePath()
         {
             Model.CSVPath = string.Empty;
-            Model.Error = string.Empty;
-            IsError = false;
+            Error = string.Empty;
+            Next = false;
         }
         #endregion
     }

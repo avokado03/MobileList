@@ -36,10 +36,10 @@ C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\MainWindow.baml
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\PDFTable.g.cs
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\PDFTable.baml
-C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.csprojAssemblyReference.cache
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
-C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Extras.dll
-C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Platform.dll
-C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.dll
-C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\bin\Debug\netcoreapp3.1\System.Windows.Interactivity.dll
 C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.csproj.CopyComplete
+C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\SetDirectories.g.cs
+C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\Views\SetDirectories.baml
+C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.csproj.CoreCompileInputs.cache
+C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\obj\Debug\netcoreapp3.1\MobileList.genruntimeconfig.cache
+C:\Users\О_о\source\repos\MobileList\WpfApp1\MobileList\bin\Debug\netcoreapp3.1\Ookii.Dialogs.Wpf.dll
