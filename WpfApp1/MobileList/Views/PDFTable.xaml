@@ -34,11 +34,6 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Width="*">
                     <DataGridTextColumn.Header>
-                        <TextBlock Style="{StaticResource HeaderText}" Text="{StaticResource Number}"/>
-                    </DataGridTextColumn.Header>
-                </DataGridTextColumn>
-                <DataGridTextColumn Width="*">
-                    <DataGridTextColumn.Header>
                         <TextBlock FontSize="18px" Text="{StaticResource Path}"/>
                     </DataGridTextColumn.Header>
                 </DataGridTextColumn>

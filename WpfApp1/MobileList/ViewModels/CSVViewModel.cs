@@ -14,7 +14,7 @@ namespace MobileList.ViewModels
 
         public CSVViewModel()
         {
-            Model = new CSVModel();
+            Model = new CsvModel();
             OpenFileCommand = new CommandBase(OpenFile);
             CleanFilePathCommand = new CommandBase(
                 () => {
@@ -25,13 +25,13 @@ namespace MobileList.ViewModels
             base.SetPrevNext(null, new PDFTable());
         }
 
-        public CSVModel Model
+        public CsvModel Model
         {
-            get { return (CSVModel)GetValue(ModelProperty); }
+            get { return (CsvModel)GetValue(ModelProperty); }
             set { SetValue(ModelProperty, value); }
         }
         public static readonly DependencyProperty ModelProperty =
-            DependencyProperty.Register("Model", typeof(CSVModel), typeof(CSVViewModel), new PropertyMetadata(null));
+            DependencyProperty.Register("Model", typeof(CsvModel), typeof(CSVViewModel), new PropertyMetadata(null));
 
         #region Command props
         public ICommand OpenFileCommand

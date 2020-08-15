@@ -2,7 +2,7 @@
 
 namespace MobileList.Models
 {
-    public class CSVModel : DependencyObject
+    public class CsvModel : DependencyObject
     {
 
         public string CSVPath
@@ -12,6 +12,6 @@ namespace MobileList.Models
         }
 
         public static readonly DependencyProperty CSVPathProperty =
-            DependencyProperty.Register("CSVPath", typeof(string), typeof(CSVModel), new PropertyMetadata(""));
+            DependencyProperty.Register("CSVPath", typeof(string), typeof(CsvModel), new PropertyMetadata(""));
     }
 }
