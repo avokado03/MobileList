@@ -5,6 +5,7 @@ using System.Windows;
 using Microsoft.Win32;
 using MobileList.Views;
 using MobileList.ViewModels.Commands;
+using Helpers.ErrorMessages;
 
 namespace MobileList.ViewModels
 {
@@ -15,7 +16,11 @@ namespace MobileList.ViewModels
         {
             Model = new CSVModel();
             OpenFileCommand = new CommandBase(OpenFile);
-            CleanFilePathCommand = new CommandBase(CleanFilePath);
+            CleanFilePathCommand = new CommandBase(
+                () => {
+                    CleanVM();
+                    Error = string.Empty;
+                });
             SetDirectoriesCommand = new WindowStateCommand(new SetDirectories());
             base.SetPrevNext(null, new PDFTable());
         }
@@ -72,24 +77,25 @@ namespace MobileList.ViewModels
                 };
                 if (!fileDialog.ShowDialog() == true)
                 {
-                    throw new ArgumentException("Проверьте расширение и целостность файла заказа");
+                    throw new ArgumentException();
                 }
                 Model.CSVPath = fileDialog.FileName;
                 Error = string.Empty;
                 Next = true;
             }
+            catch (ArgumentException)
+            {
+                CleanVM(IOMessages.FileNotSelect);
+            }
             catch (Exception)
             {
-                Model.CSVPath = string.Empty;
-                Error = "Файл не выбран";
-                Next = false;
+                CleanVM(IOMessages.FileNotFound);
             }
         }
 
-        private void CleanFilePath()
+        protected override void CleanVM()
         {
             Model.CSVPath = string.Empty;
-            Error = string.Empty;
             Next = false;
         }
         #endregion
