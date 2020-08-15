@@ -62,5 +62,12 @@ namespace MobileList.ViewModels
 
         public static readonly DependencyProperty GoToNextWindowCommandProperty =
             DependencyProperty.Register("GoToNextWindowCommand", typeof(ICommand), typeof(VMBase), new PropertyMetadata(null));
+
+        protected abstract void CleanVM();
+        protected virtual void CleanVM(string error)
+        {
+            CleanVM();
+            Error = error;
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Windows.Input;
 using MobileList.ViewModels.Commands;
 using Ookii.Dialogs.Wpf;
+using Helpers.ErrorMessages;
 
 namespace MobileList.ViewModels
 {
@@ -18,7 +19,7 @@ namespace MobileList.ViewModels
             SetPDFDirectoryCommand = new CommandBase(SetPDFDir);
             SetHTMLDirectoryCommand = new CommandBase(SetHTMLDir);
             SaveCommand = new CommandBase(Save);
-            CleanCommand = new CommandBase(Clean);
+            CleanCommand = new CommandBase(CleanVM);
         }
 
         public DirectoriesModel Model
@@ -79,7 +80,6 @@ namespace MobileList.ViewModels
         #endregion
 
         #region Command actions
-        //TODO: error handling
         private string SetDirectory()
         {
             var dialog = new VistaFolderBrowserDialog();
@@ -96,13 +96,9 @@ namespace MobileList.ViewModels
                 Model.ResultDir = SetDirectory();
                 Error = string.Empty;
             }
-            catch(ArgumentException ex)
-            {
-                //TODO: Error
-            }
             catch (Exception)
             {
-                //TODO: Error
+                Error = IOMessages.DirectoryNotFound("Результат");
             }
         }
 
@@ -113,13 +109,9 @@ namespace MobileList.ViewModels
                 Model.PDFDir = SetDirectory();
                 Error = string.Empty;
             }
-            catch (ArgumentException ex)
-            {
-                //TODO: Error
-            }
             catch (Exception)
             {
-                //TODO: Error
+                Error = IOMessages.DirectoryNotFound("PDF");
             }
         }
 
@@ -130,13 +122,9 @@ namespace MobileList.ViewModels
                 Model.HTMLDir = SetDirectory();
                 Error = string.Empty;
             }
-            catch (ArgumentException ex)
-            {
-                //TODO: Error
-            }
             catch (Exception)
             {
-                //TODO: Error
+                Error = IOMessages.DirectoryNotFound("PDF");
             }
         }
 
@@ -150,18 +138,14 @@ namespace MobileList.ViewModels
                 Process.Start(Process.GetCurrentProcess().MainModule.FileName);
                 Application.Current.Shutdown();
             }
-            catch(ApplicationException ex)
-            {
-                Error = "..";
-            }
             catch(Exception)
             {
-                Error = "..";
+                CleanVM(IOMessages.DirectorySelectFailed);
             }
 
         }
 
-        public void Clean()
+        protected override void CleanVM()
         {
             Model = Model.GetAppDirectories();
             Error = string.Empty;

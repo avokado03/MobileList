@@ -23,6 +23,8 @@ namespace Helpers.ErrorMessages
         public static string DirectoryNotFound(string dirPath) =>
             $"Директория {dirPath} не найдена, попробуйте выбрать другую папку";
 
+        public const string DirectorySelectFailed = "Не удалось сохранить новые пути директорий";
+
         #endregion
     }
 }
